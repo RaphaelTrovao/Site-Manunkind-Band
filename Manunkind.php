@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+$path = "data.json";
+ 
+
+$txtjs = file_get_contents($path);
+$ar[] = json_decode($txtjs, true);
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -46,18 +53,9 @@
             <h1 id="ts">AGENDA:</h1>
             <div class="linha"></div>
             <div class="bxA">
-                <div class="c"><img src="assets/img/renomear.png" id="cvrs"> 
-                    <button class="botShows">SAIBA MAIS</button>
-                </div>
-                 <div class="c"><img src="assets/img/renomear.png" id="cvrs"> 
-                    <button class="botShows">SAIBA MAIS</button>
-                </div>
-                 <div class="c"><img src="assets/img/renomear.png" id="cvrs"> 
-                    <button class="botShows">SAIBA MAIS</button>
-                </div>
-                <?php foreach($teste as $tt): ?>
+                <?php foreach($ar as $tt): ?>
                 <div class="c">
-                    <img src="<?= $tt['ft'] ?>" id="cvrs"> 
+                    <img src="<?= $tt['imagem'] ?>" id="cvrs"> 
                     <button class="botShows">SAIBA MAIS</button>
                 </div>
                <?php endforeach; ?>
