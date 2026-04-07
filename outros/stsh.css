@@ -11,10 +11,6 @@ h1{
     margin-left: 20px;
     margin-bottom: 0;
 }
-h4, h2{
-    margin: 0px;
-}
-
 
 header{
     
@@ -23,10 +19,6 @@ header{
     position: relative;
     margin: 0;
     z-index: 1;
-}
-a{
-    color: inherit;
-    text-decoration: none;
 }
 .teste{
     background-color: rgb(5, 5, 5);
@@ -121,46 +113,17 @@ a{
 
    
 }
-.bxA{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 .c{
     position:relative;
     background-color: rgb(32, 32, 32);
     width: 349px;
     height: 513px;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.botShows{
-    width:170px;
-    height: 66px;
-    background-color: gray;
-    border-radius: 13px;
-    border: none;
-    margin: 0;
-    margin-bottom: 2%;
-    color:white;
-   
     
-    display: flex;
-     text-align: center;
-     justify-content: center;
-    align-items: center;
-}
-.botShows:hover{
-    background-color: rgb(186, 186, 186);
 }
 #cvrs{
     position:relative;
     width: 349px;
-    height: 70%;
+    height: 
 }
 #logo{
     width: 300px;

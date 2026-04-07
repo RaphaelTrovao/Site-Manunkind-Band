@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -46,14 +47,10 @@
             <h1 id="ts">AGENDA:</h1>
             <div class="linha"></div>
             <div class="bxA">
-              
-                <?php foreach($ts as $tt): ?>
+                <?php foreach($ar as $tt): ?>
                 <div class="c">
                     <img src="<?= $tt['imagem'] ?>" id="cvrs"> 
-                    <h2><?= $tt['nome'] ?></h2>
-                    <h4 id="tst">DATA: <?= $tt['data'] ?> </h4><h4> LOCAL: <?= $tt['local'] ?></h4>
-                    <a href="<?= $tt['link'] ?>" target="_blank" class="botShows">SAIBA MAIS</a>
-                    
+                    <button class="botShows">SAIBA MAIS</button>
                 </div>
                <?php endforeach; ?>
                 
